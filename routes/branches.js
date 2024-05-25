@@ -30,13 +30,13 @@ router.post('/branch', async (req, res) => {
     }
 });
 
-router.put('/branch', async (req, res) => {
-    try {
-        let branch = await branchesController.updateQuantityEmployees(req.body.id, req.body.quantityEmployees);
-        res.json(branch);
-    } catch (ex) {
-        res.status(500).json({ message: ex.message });
-    }
-});
+// router.put('/branch', async (req, res) => {
+//     try {
+//         let branch = await branchesController.updateQuantityEmployees(req.body.id, req.body.quantityEmployees);
+//         res.json(branch);
+//     } catch (ex) {
+//         res.status(500).json({ message: ex.message });
+//     }
+// });
 
 module.exports = router;

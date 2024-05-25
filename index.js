@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors'); // Importa cors
 require('dotenv').config({ path: require('find-config')('.env') });
 
 const app = express();
@@ -10,6 +11,9 @@ const salesRoutes = require('./routes/sales.js');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
+// Habilita CORS
+app.use(cors());
 
 app.use('/api', branchesRoutes);
 app.use('/api', employeesRoutes);
