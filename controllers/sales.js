@@ -3,13 +3,6 @@ const { ethers } = require('ethers');
 const salesContract = require('../artifacts/contracts/Sales.sol/Sales.json');
 const { format } = require('path');
 
-// const PINATA_API_KEY = '7f5296a7d2ffde500f49';
-// const PINATA_SECRET_KEY = 'f2eeaa9e5b5729f834b0169a2159193356ff773129022d5266eb9f51bd29ea73';
-// const API_URL = 'https://eth-sepolia.g.alchemy.com/v2/L7q98I4uCHVTKCt8LPyyNfzaI3ZjR_h_';
-// const PRIVATE_KEY = '575c6f028238d79b35b58d581f8499126c5985440efe2eadf31deff1c9ca8467';
-// const PUBLIC_KEY = '0xEbfbE340b101475419F2dF19Ae09DD9a15F41234';
-// const SALES_CONTRACT= '0x47E4b93D25D2B5820fAb30BfF3B0Fcfd0308E0cE';
-
 const {API_URL,PRIVATE_KEY,PUBLIC_KEY,SALES_CONTRACT}=process.env;
 
 async function createTransaction(provider, method, params) {

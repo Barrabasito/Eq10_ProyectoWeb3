@@ -2,12 +2,6 @@ require('dotenv').config();
 const { ethers } = require('ethers');
 const branchContract = require('../artifacts/contracts/Branches.sol/Branches.json');
 
-// const PINATA_API_KEY = '7f5296a7d2ffde500f49';
-// const PINATA_SECRET_KEY = 'f2eeaa9e5b5729f834b0169a2159193356ff773129022d5266eb9f51bd29ea73';
-// const API_URL = 'https://eth-sepolia.g.alchemy.com/v2/L7q98I4uCHVTKCt8LPyyNfzaI3ZjR_h_';
-// const PRIVATE_KEY = '575c6f028238d79b35b58d581f8499126c5985440efe2eadf31deff1c9ca8467';
-// const PUBLIC_KEY = '0xEbfbE340b101475419F2dF19Ae09DD9a15F41234';
-// const BRANCH_CONTRACT = '0xF3743107431aF5988fa0224C511Dca63Ae270fCb';
 
 const {API_URL,PRIVATE_KEY,PUBLIC_KEY,BRANCH_CONTRACT}=process.env;
 

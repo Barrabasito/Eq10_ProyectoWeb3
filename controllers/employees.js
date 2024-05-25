@@ -2,13 +2,6 @@ require('dotenv').config();
 const { ethers } = require('ethers');
 const employeeContract = require('../artifacts/contracts/Employees.sol/Employees.json');
 
-// const PINATA_API_KEY = '7f5296a7d2ffde500f49';
-// const PINATA_SECRET_KEY = 'f2eeaa9e5b5729f834b0169a2159193356ff773129022d5266eb9f51bd29ea73';
-// const API_URL = 'https://eth-sepolia.g.alchemy.com/v2/L7q98I4uCHVTKCt8LPyyNfzaI3ZjR_h_';
-// const PRIVATE_KEY = '575c6f028238d79b35b58d581f8499126c5985440efe2eadf31deff1c9ca8467';
-// const PUBLIC_KEY = '0xEbfbE340b101475419F2dF19Ae09DD9a15F41234';
-// const EMPLOYEE_CONTRACT = '0x5049D295cF0079a5663C5A548cE6Bd8297fbC7F6';
-
 const {API_URL,PRIVATE_KEY,PUBLIC_KEY,EMPLOYEE_CONTRACT}=process.env;
 
 async function createTransaction(provider, method, params) {
